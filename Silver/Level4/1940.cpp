@@ -17,7 +17,7 @@ int main()
 		check[i] = false;
 	}
 
-	for (int i = 0; i < N - 1; i++) {
+	for (int i = 0; i < N - 1; i++) { // 두 포인터
 		for (int j = i + 1; j < N; j++) {
 			if (!check[i] && !check[j] && arr[i] + arr[j] == M) {
 				cnt++;
